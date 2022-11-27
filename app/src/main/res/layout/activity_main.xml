@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contrats"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:id="@+id/txtclient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:background="@drawable/edit_text_background"
+            android:hint="Saisir nom Client"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"/>
+
+        <ImageButton
+            android:id="@+id/btnRecherche"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginRight="40dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/ic_action_name" />
+
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:text="Réfèrence"
+                android:layout_column="1"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="5dp"
+                />
+
+            <EditText android:id="@+id/edtref"
+                android:layout_column="2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_span="2"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_background"
+
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:text="Date Debut"
+                android:layout_column="1"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/black"
+
+                />
+
+            <EditText
+                android:id="@+id/txtDateD"
+                android:layout_column="2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:padding="10dp"
+
+                />
+            <Button
+                android:id="@+id/BTNDateD"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="..."
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView android:text="Date Fin"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/black"/>
+
+            <EditText android:id="@+id/txtDateF"
+                android:layout_column="2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:padding="10dp"
+                />
+            <Button
+                android:id="@+id/BTNDateF"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="..."
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:text="Redevence"
+                android:layout_column="1"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="5dp"
+                />
+            <EditText android:id="@+id/txtred"
+                android:layout_column="2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView android:text="Client"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/black"/>
+            <EditText android:id="@+id/txtCl"
+                android:layout_column="2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:padding="10dp"
+                />
+            <Button
+                android:id="@+id/BTNClient"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="..."
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:text="Adresse Client"
+                android:layout_column="1"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="5dp"
+                />
+            <EditText android:id="@+id/txtadresse"
+                android:layout_column="2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginRight="10dp"
+                />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layNaviguer">
+
+        <ImageButton
+            android:id="@+id/btnFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/ic_premier"
+            />
+
+        <ImageButton
+            android:id="@+id/btnPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/ic_previous"
+            />
+
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/ic_next"
+            />
+
+        <ImageButton
+            android:id="@+id/btnLast"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginRight="40dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/ic_last"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnajout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/ic_ajout"
+            />
+
+        <ImageButton
+            android:id="@+id/btnmodifier"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/ic_modifier"
+            />
+
+
+        <ImageButton
+            android:id="@+id/btndelete"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/ic_delete"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
